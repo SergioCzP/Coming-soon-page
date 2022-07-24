@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main class="soon">
+      <div class="soon__container">
+        <img
+          class="soon__logo"
+          src="images/logo.svg"
+          alt="Logo Base Apparel"
+          width="50"
+          height="50"
+        />
+
+        <img
+          class="soon__hero"
+          alt="Model Base Apparel"
+          width="350"
+          height="250"
+          src="images/hero-mobile.jpg"
+          srcset="images/hero-mobile.jpg 375w, images/hero-desktop.jpg 610w"
+          sizes="(max-width: 767px) 375px,
+                    610px"
+        />
+        <div class="soon__content">
+          <h1 class="soon__heading">
+            <span class="soon__heading--red">WE'RE</span> COMING SOON
+          </h1>
+          <p class="soon__paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" class="form">
+            <label class="form__label" for="email"
+              ><input
+                class="form__input"
+                type="text"
+                id="email"
+                placeholder="Email Address"
+            /></label>
+            <button class="form__submit" type="submit">
+              <img
+                class="form__arrow"
+                src="images/icon-arrow.svg"
+                alt="Icon Arrow"
+                width="20"
+                height="20"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__attribution">
+        Challenge by
+        <a
+          class="footer__frontend"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="footer__autor" href="#" target="_blank">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
