@@ -54,15 +54,22 @@ img {
   margin: 0 auto;
 }
 
+.soon__logo--container {
+  width: 100%;
+  padding: 3rem;
+}
+
 .soon__logo {
   object-fit: contain;
-  padding: 3rem;
-  width: 18rem;
-  height: 8rem;
+  width: 35%;
+}
+
+.soon__images {
+  width: 100%;
 }
 
 .soon__hero {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
