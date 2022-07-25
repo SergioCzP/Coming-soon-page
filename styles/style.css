@@ -18,6 +18,8 @@
 
   /* Border input */
   --borderInput: hsla(0, 37%, 69%, 0.509);
+  /* Blur */
+  --blur: hsla(0, 37, 10, 0.5);
 
   --font: "Josefin Sans", sans-serif;
 }
@@ -77,11 +79,12 @@ img {
 
 .soon__content {
   padding: 3rem;
-  height: 40rem;
+  height: 42rem;
 }
 
 .soon__heading {
   text-align: center;
+  margin: 2.5rem 0;
   font-size: 4rem;
   letter-spacing: 1.25rem;
   line-height: 1;
@@ -94,6 +97,7 @@ img {
 }
 
 .soon__paragraph {
+  margin: 0 0 2.5rem;
   font-size: 1.45rem;
   line-height: 1.5;
   font-weight: 400;
@@ -105,12 +109,13 @@ img {
   display: flex;
   align-items: center;
   position: absolute;
-  width: 31.5rem;
+  max-width: 36rem;
+  width: calc(100% - 6rem);
 }
 
 .form__label {
   position: relative;
-  width: 92%;
+  width: 100%;
   /* border: solid 1rem rebeccapurple; */
 }
 
@@ -130,7 +135,7 @@ img {
 .form__submit {
   position: relative;
   height: 5rem;
-  width: 7rem;
+  width: 8rem;
   left: 0;
   border: none;
   background: var(--linearRed);
@@ -139,6 +144,8 @@ img {
   -moz-border-radius: 10rem;
   border-radius: 10rem;
 
+  -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba(34, 16, 16, 0.5);
+  box-shadow: 0rem 1rem 2rem 0rem rgba(34, 16, 16, 0.5);
   cursor: pointer;
 }
 
