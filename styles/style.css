@@ -251,6 +251,8 @@ img {
   position: relative;
   width: 100%;
   /* border: solid 1rem rebeccapurple; */
+  color: var(--desaturatedRed);
+  transition: color 0.5s;
 }
 
 .form__input {
@@ -260,6 +262,7 @@ img {
   padding: 1.5rem 2rem;
   border: solid 0.1rem var(--borderInput);
   line-height: 0;
+  margin-bottom: 1rem;
 
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
@@ -310,7 +313,6 @@ img {
   background-image: url("../images/icon-error.svg");
   background-repeat: no-repeat;
   background-position: 80% center;
-  margin-bottom: 1rem;
 }
 
 /* Hover */
@@ -327,11 +329,21 @@ img {
 
 /* footer */
 .footer {
+  padding: 5rem 0;
   max-width: 144rem;
   background: var(--linearWhite);
   background-repeat: no-repeat;
 }
 
 .footer__attribution {
+  margin: 0;
+  line-height: 1;
   text-align: center;
+}
+
+.footer__frontend,
+.footer__autor {
+  font-weight: bolder;
+  text-decoration: none;
+  color: hsl(220, 45%, 51%);
 }
